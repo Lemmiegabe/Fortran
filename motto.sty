@@ -1,0 +1,9 @@
+%motto
+\ProvidesPackage{motto}[2022/03/16]
+\newcommand{\motto}[1]{
+\large % font size 
+\fontfamily{phv}\selectfont % font family 
+%print motto centered and slanted 
+\begin{center} \textsl{#1}\end{center}\par
+%back to normal size and font
+\normalsize \normalfont }

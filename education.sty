@@ -1,0 +1,18 @@
+\ProvidesPackage{education}[2022/03/16]
+% education entry 
+\newcommand{\education}[4]{
+
+% name of the studies 
+\noindent 	\textbf{#1}
+%at the right the duration 
+ 	\hfill 
+	\framebox{ % duration inside a frame box 
+	\parbox{6em}{%
+	\centering\textbf{#2}}} \par
+%new paragraph  with the school in italics 
+	\noindent \textit{#3} \par 
+% description with no hanging and in smaller text 
+	\vspace*{0.5em}
+	\noindent \hangindent=2em\hangafter=0 \small#4
+%back to normal size 
+\normalsize \par}

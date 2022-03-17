@@ -1,0 +1,11 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{info}[2022/03/16]
+% personal  Information 
+\newcommand{\info}[2]{
+% set specific indentation for personal information 
+\noindent \hangindent=2em\hangafter=0
+% create a box to align two pieces of text 
+\parbox{\spacebox}{%
+\textsl{#1}} % slanted entry name 
+#2 \par} % entry value 
+\endinput
